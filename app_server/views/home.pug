@@ -1,0 +1,37 @@
+extends layout
+block content
+  .row.banner
+  .col-12
+    h1= pageHeader.title 
+      small &nbsp;#{pageHeader.strapline}
+       .row
+    .col-12.col-md-8
+      each location in tyres 
+        .card 
+          .card-block 
+            h4 
+              a(href="/location")= location.name
+            .facilities
+              each facility in location.facilities
+                span.badge.badge-warning= facility 
+        .row
+    .col-12.col-md-8
+      each location in  engineoils
+        .card 
+          .card-block 
+            h4 
+              a(href="/engine")= location.name
+            .facilities
+              each facility in location.facilities
+                span.badge.badge-warning= facility 
+        .row
+    .col-12.col-md-8
+      each location in spareparts
+        .card 
+          .card-block 
+            h4 
+              a(href="/spare")= location.name
+            .facilities
+              each facility in location.facilities
+                span.badge.badge-warning= facility 
+    
