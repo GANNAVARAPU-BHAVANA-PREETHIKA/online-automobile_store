@@ -1,0 +1,196 @@
+/* Import fonts from Google Fonts */
+@import url("//fonts.googleapis.com/css?family=Poppins:400,700");
+
+/* Change font family for headings and legend */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif; /* Poppins font for headings */
+  color: #000; /* Black text color for headings */
+}
+
+legend {
+  font-family: 'Poppins', sans-serif; /* Poppins font for legend */
+}
+
+/* Change navbar background and border colors */
+.navbar {
+  background-color: #000; /* Black background */
+  border-color: #222; /* Even darker gray border color */
+}
+
+/* Change navbar brand font and color */
+.navbar-light .navbar-brand {
+  font-family: 'Poppins', sans-serif; /* Poppins font for brand */
+  color: #fff; /* White text color */
+}
+
+/* Change navbar toggler icon colors */
+.navbar-light .navbar-toggler {
+  color: #fff; /* White color */
+  border-color: #fff; /* White border color */
+}
+
+/* Change color of navbar links on hover and focus */
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff; /* White color on hover/focus */
+}
+
+/* Change card background color */
+.card {
+  background-color: #222; /* Dark gray background */
+  padding: 1rem;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0); /* Subtle shadow */
+}
+
+/* Change card-primary border and text colors */
+.card-primary {
+  border-color: #999; /* Black border */
+  margin-bottom: 0.5rem;
+  color: #888; /* Dark text color */
+}
+
+/* Change banner styles */
+.banner {
+  margin-top: 2em; /* Increased margin-top */
+  border-bottom: 2px solid #000; /* Black border */
+  margin-bottom: 1em; /* Increased margin-bottom */
+  padding-bottom: 1em; /* Increased padding-bottom */
+}
+
+/* Change review-header background color */
+.review-header {
+  background-color: #333; /* Dark gray background */
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Change badge and button colors */
+.badge-default, .btn-primary {
+  background-color: #444; /* Dark gray background */
+  border-color: #222; /* Even darker gray border color */
+  color: #fff; /* White text color */
+}
+
+/* Change link color and hover color */
+h4 a,
+h4 a:hover {
+  color: #fff; /* Black link color */
+}
+
+/* Change small text color */
+h4 small {
+  font-size: 60%;
+  line-height: 200%;
+  color: #fff; /* Gray small text color */
+}
+
+/* Change small text color for h1 */
+h1 small {
+  color: #444; /* Gray small text color */
+}
+
+/* Change address margin */
+.address {
+  margin-bottom: 0.25rem; /* Reduced margin-bottom */
+}
+
+/* Change facilities badge margin */
+.facilities span.badge {
+  margin-right: 4px; /* Increased margin-right */
+}
+
+/* Change paragraph margin */
+p {
+  margin-bottom: 1rem; /* Increased margin-bottom */
+  font-size: 18px;
+}
+
+/* Change link color and hover color */
+a {
+  color: #888; /* Black link color */
+  text-decoration: none;
+  padding-right: 6px;
+}
+
+a:hover {
+  color: #888; /* Darker gray hover color */
+}
+
+/* Change star icon color */
+.fa-star {
+  color: #f1c40f; /* Yellow star color */
+}
+
+/* Change badge-warning background color */
+span.badge.badge-warning {
+  background-color: #888; /* Orange background */
+}
+
+/* Change body font, text color, and background color */
+body {
+  font-family: "Poppins", Arial, sans-serif; /* Poppins font for body text */
+  color: #111; /* Black text color */
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Adjust the height of h1 */
+h1 {
+  height: 80px; /* Adjust the height as needed */
+  line-height: 95px; /* Center vertically within the height */
+}
+.image-container {
+  display: flex;
+  justify-content: space-between;
+}
+/* Add background image to the body */
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTqBOPz5SLJ0W3eqDNsb0EHxWXVIN4upNVFftLLMblX9QYq6Lelzx_FvGhMSWRjmjlmtE&usqp=CAU'); /* Replace with your image URL or file path */
+  background-size: cover; /* Adjust the sizing method as needed (cover, contain, etc.) */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center center; /* Center the image horizontally and vertically */
+  /* Additional background properties can be added here */
+}
+/* Add your custom styles here */
+.tyre-card {
+  background-color: #555;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.engine-oil-card {
+  background-color: #777;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.spare-parts-card {
+  background-color: #666;
+  border: 1px solid #bbb;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Add more styling as needed */
+
+/* Add your custom styles here */
+.tyre-card img.card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.engine-oil-card img.card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.spare-parts-card img.card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add more styling as needed */

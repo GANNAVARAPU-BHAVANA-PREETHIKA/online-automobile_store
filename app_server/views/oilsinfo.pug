@@ -1,0 +1,61 @@
+extends layout
+block content
+    style.
+        .image-container {
+            text-align: center; /* Center-align the text */
+            padding: 20px; /* Add padding for spacing */
+        }
+        .image-container img {
+            width: 100%; /* Ensure all images have the same width */
+            max-height: 200px; /* Set a fixed height for the image containers */
+            display: block;
+            margin: 0 auto;
+        }
+        .image-container p {
+            margin-top: 5px; /* Add some spacing between image and text */
+        }
+    .row.banner
+        .col-12
+            h1 ENGINE OILS 
+    .row
+        .col-12.col-lg-9
+            .row
+                .col-12.col-md-6
+                    .card-primary
+                        img.img-fluid.rounded(src='https://rukminim2.flixcart.com/image/850/1000/xif0q/vehicle-lubricant/8/0/y/-original-imagry6a5sczbfqz.jpeg?q=20')
+                        .card-block
+                            h2.card-title Castrol
+                            p Castrol Engine Oil
+                            
+                    .card-primary
+                        img.img-fluid.rounded(src='https://5.imimg.com/data5/SELLER/Default/2021/8/JP/JP/JB/20565351/20w-40-mg-15l-diesel-engine-oil.jpg')
+                        .card-block
+                            h2.card-title Servo
+                            p Servo Engine Oil
+                            
+
+                    .card-primary
+                        img.img-fluid.rounded(src='https://m.media-amazon.com/images/I/71mKj8j0yYL.jpg')
+                        .card-block
+                            h2.card-title Mobil Super
+                            p Mobil Super Engine Oil
+                            
+
+                    .card-primary
+                        img.img-fluid.rounded(src='https://www.gscaltexindia.com/wp-content/uploads/2020/12/kixxpao1.jpg')
+                        .card-block
+                            h2.card-title GS Caltex 
+                            p GS Caltex Engine Oil
+                            p Instock : 10
+
+                    .card-primary
+                        img.img-fluid.rounded(src='https://cdn.moglix.com/p/LbEtM6I7zVSM9-xxlarge.jpg')
+                        .card-block
+                            h2.card-title Motul
+                            p Motul Engine Oil
+                            p Instock : 10
+                            
+
+                    .card-primary
+                        .card-block
+                            a.btn.btn-primary.float-end(href='/location/review/new') Add review
