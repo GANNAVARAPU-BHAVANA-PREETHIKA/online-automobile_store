@@ -11,7 +11,7 @@ block content
         .card-block 
           img.card-image(src="https://d2hucwwplm5rxi.cloudfront.net/wp-content/uploads/2021/09/06120412/summer-Vs-winter-tyres-090620210503.jpg", alt="Tyre Image")  
           h4 
-            a(href="/location")= location.name
+            a(href="/home/location")= location.name
           .facilities
             each facility in location.facilities
               span.badge.badge-warning= facility 
@@ -21,7 +21,7 @@ block content
         .card-block 
           img.card-image(src="https://image.adsoftheworld.com/twb83oawgbc6hqfr54esg7y9jwhp", alt="Engine Oil Image")  
           h4 
-            a(href="/engine")= location.name
+            a(href="/home/engine")= location.name
           .facilities
             each facility in location.facilities
               span.badge.badge-warning= facility 
@@ -31,7 +31,7 @@ block content
         .card-block 
           img.card-image(src="https://previews.123rf.com/images/vladru/vladru1402/vladru140200008/26008609-many-auto-parts-done-in-3d.jpg", alt="Spare Parts Image")  
           h4 
-            a(href="/spare")= location.name
+            a(href="/home/spare")= location.name
           .facilities
             each facility in location.facilities
               span.badge.badge-warning= facility 

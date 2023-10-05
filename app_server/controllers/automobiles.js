@@ -1,3 +1,11 @@
+const main = (req,res) => {
+    res.render('main',{
+        title: 'AUTOMOBILES',
+        pageHeader:{
+        title : 'S³',
+        strapline : 'Sai Enterprises !'}})
+    };
+
 const homelist = (req,res) => {
     res.render('home',{
         title: 'AUTOMOBILES',
@@ -37,5 +45,6 @@ module.exports = {
     tyresinfo,
     oilsinfo,
     spareinfo,
-    addReview
+    addReview,
+    main
 };
