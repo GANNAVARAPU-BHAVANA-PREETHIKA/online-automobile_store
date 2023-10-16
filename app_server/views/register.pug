@@ -6,7 +6,7 @@ block content
     br
     h1 Register
     p.lead
-    form(role='form', action='/', method='post', onsubmit='return validateForm()')
+    form(role='form', action='/submit', method='post', onsubmit='return validateForm()')
       .form-group
         label(for='username') Username
         input.form-control(type='text', id='user', name='username', placeholder='enter a username')
@@ -19,9 +19,9 @@ block content
       .form-group
         label(for='email') Email
         input.form-control(type='email', id='email', name='email', placeholder='enter an email address')
-      a.btn.btn-default(role='button', href='javascript:void(0);', onclick='validateForm()') Submit
+      a.btn.btn-default(href='/') Submit
       | &nbsp;
-      a.btn.btn-default(role='button', href='/') Cancel
+      a.btn.btn-default(href='/') Cancel
 
   script.
     function validateForm() {
