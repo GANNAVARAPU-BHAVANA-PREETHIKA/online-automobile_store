@@ -147,8 +147,8 @@ h1 {
 }
 /* Add background image to the body */
 body {
-  background-image: url('https://i.pinimg.com/736x/73/99/6f/73996f3dadf73ff416bcb2104f647527.jpg'); /* Replace with your image URL or file path */
-  background-size: cover ; /* Adjust the sizing method as needed (cover, contain, etc.) */
+  background-image: url('https://www.shutterstock.com/shutterstock/photos/785007553/display_1500/stock-vector-seamless-white-background-with-gray-linear-icons-of-car-parts-and-elements-785007553.jpg'); /* Replace with your image URL or file path */
+  background-size: cover; /* Adjust the sizing method as needed (cover, contain, etc.) */
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-position: center center; /* Center the image horizontally and vertically */
   /* Additional background properties can be added here */
@@ -193,4 +193,4 @@ body {
   height: auto;
 }
 
-/* Add more styling as needed */
+/* Add more styling as needed */

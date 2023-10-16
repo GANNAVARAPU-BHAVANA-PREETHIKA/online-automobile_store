@@ -1,0 +1,58 @@
+extends layout
+block content
+    .row.banner
+        .col-12
+            h1 Cart
+    .row
+        .col-12.col-md-8
+            form(action="/home/engine", method="get", role="form")
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="name") Name
+                    .col-12.col-sm-10
+                        input#name.form-control(name="name")
+                br
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="phone_no") Phone Number
+                    .col-12.col-sm-10
+                        input#phone_no.form-control(name="phone_no")
+                br
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="unique_id") Unique ID
+                    .col-12.col-sm-2
+                        input#unique_id.form-control(name="unique_id")
+                br
+                .form-group.row
+                    label.col-sm-2.col-form-label(for="payment") Payment
+                    .col-sm-10
+                        select#payment.form-control.input-sm(name="payment")
+                            option COD 
+                            option UPI 
+                            option Credit Card 
+                            option Debit Card
+                br
+                .form-group.row
+                    label.col-10.col-sm-2.col-form-label(for="address") Address
+                    .col-12.col-sm-10
+                        textarea#address.form-control(name="address",rows="5")
+                br
+                .col-12.col-md-8    
+                    button.btn.btn-primary.float-end Buy
+    
+    script.
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Get the 'unique_id' parameter value from the URL
+        var uniqueId = getParameterByName('unique_id');
+
+        // Set the value of the input field
+        if (uniqueId) {
+            document.querySelector('input[name="unique_id"]').value = uniqueId;
+        }

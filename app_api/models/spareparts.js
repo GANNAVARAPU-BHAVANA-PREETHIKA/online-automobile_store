@@ -6,6 +6,10 @@ const sparePartSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  unique_id : {
+    type : Number,
+    required : true,
+  },
   category: String,
   price: Number,
   inStock: {

@@ -6,6 +6,10 @@ const tyreSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  unique_id : {
+    type : Number,
+    required : true,
+  },
   name: {
     type: String,
     required: true,
@@ -22,9 +26,3 @@ const tyreSchema = new mongoose.Schema({
 
 // Create a Mongoose model based on the schema
 const Tyre = mongoose.model('Tyres', tyreSchema);
-
-
-
-
-
-

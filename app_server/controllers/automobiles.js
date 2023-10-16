@@ -15,7 +15,7 @@ const homelist = (req,res) => {
         },
         tyres: [{
             name : 'Tyres',
-            facilities : ['Cars' , 'Bikes' , 'Trucks' , 'Lorries']
+            facilities : ['Cars' , 'Bikes' , 'Trucks' ]
 
         }],
         engineoils : [{
@@ -38,7 +38,22 @@ const spareinfo =(req,res) => {
     res.render('spareinfo' , {title : 'Spare parts'});
 };
 const addReview = (req, res) => {
-    res.render('reviews', {title: 'Review Starbucks'});
+    res.render('reviews', {title: 'Review'});
+};
+const addReview1 = (req, res) => {
+    res.render('reviews1', {title: 'Review'});
+};
+const addReview2 = (req, res) => {
+    res.render('reviews2', {title: 'Review'});
+};
+const purchase = (req, res) => {
+    res.render('purchase', {title: 'Cart'});
+};
+const purchase1 = (req, res) => {
+    res.render('purchase1', {title: 'Cart'});
+};
+const purchase2 = (req, res) => {
+    res.render('purchase2', {title: 'Cart'});
 };
 module.exports = {
     homelist,
@@ -46,5 +61,10 @@ module.exports = {
     oilsinfo,
     spareinfo,
     addReview,
-    main
+    addReview1,
+    addReview2,
+    main,
+    purchase,
+    purchase1,
+    purchase2
 };

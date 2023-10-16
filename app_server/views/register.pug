@@ -1,23 +1,38 @@
 extends layout
-block content 
- .container 
-  br 
-  br
-  h1 Register
-  p.lead 
-   form(role='form', action='/', method='post') 
-    .form-group 
-     label(for='username') Username
-     input.form-control(type='text', id='user', name='username', placeholder='enter a username')
-    .form-group 
-     label(for='password')  Password
-     input.form-control(type='password', id='password', name='password', placeholder='enter a password')
-    .form-group 
-     label(for='email')  Email
-     input.form-control(type='email', id='email', name='email', placeholder='enter an email address')
-    .form-group
-     label(for='confirm') Confirm Password
-     input.form-control(type='password', id='confirm', name='confirm', placeholder='confirm your password')
-    button.btn.btn-primary(type='submit' ) Submit
-    | &nbsp;
-    a.btn.btn-default(role='button', href='/') Cancel
+
+block content
+  .container.content
+    br
+    br
+    h1 Register
+    p.lead
+    form(role='form', action='/', method='post', onsubmit='return validateForm()')
+      .form-group
+        label(for='username') Username
+        input.form-control(type='text', id='user', name='username', placeholder='enter a username')
+      .form-group
+        label(for='password') Password
+        input.form-control(type='password', id='password', name='password', placeholder='enter a password')
+      .form-group
+        label(for='confirm') Confirm Password
+        input.form-control(type='password', id='confirm', name='confirm', placeholder='confirm your password')
+      .form-group
+        label(for='email') Email
+        input.form-control(type='email', id='email', name='email', placeholder='enter an email address')
+      a.btn.btn-default(role='button', href='javascript:void(0);', onclick='validateForm()') Submit
+      | &nbsp;
+      a.btn.btn-default(role='button', href='/') Cancel
+
+  script.
+    function validateForm() {
+      var password = document.getElementById('password').value;
+      var confirm = document.getElementById('confirm').value;
+
+      if (password !== confirm) {
+        alert('Passwords do not match!');
+        return false;
+      }
+
+      // If passwords match, form submission will proceed
+      return true;
+    }

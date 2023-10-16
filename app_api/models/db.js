@@ -1,5 +1,5 @@
 var mongoose=require('mongoose');
-// require('dotenv').config();
+//require('dotenv').config();
 const PORT=process.env.PORT||9999;
 
 
@@ -23,3 +23,5 @@ mongoose.connection.on('disconnected',()=>{
 require('./tyres');
 require('./engineoils');
 require('./spareparts');
+require('./reviews');
+
