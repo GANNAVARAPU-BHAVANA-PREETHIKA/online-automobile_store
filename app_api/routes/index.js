@@ -20,10 +20,10 @@ router.get('/oils/:locationid', ctrloils.oilsReadOne);
 router.put('/oils/:locationid', ctrloils.oilsUpdateOne);
 router.delete('/oils/:locationid', ctrloils.oilsDeleteOne);
 
-router.post('/locations/:locationid/reviews', ctrlReviews.reviewsCreate);
-router.get('/locations/:locationid/reviews/:reviewid',ctrlReviews.reviewsReadOne);
-router.put('/locations/:locationid/reviews/:reviewid',ctrlReviews.reviewsUpdateOne);
-router.delete('/locations/:locationid/reviews/:reviewid',ctrlReviews.reviewsDeleteOne);
+router.post('/reviews', ctrlReviews.reviewsCreate);
+router.get('/reviews/:locationid',ctrlReviews.reviewsReadOne);
+router.put('/reviews/:locationid',ctrlReviews.reviewsUpdateOne);
+router.delete('/reviews/:locationid',ctrlReviews.reviewsDeleteOne);
 
 
 module.exports = router;
